@@ -35,7 +35,7 @@ def merge_sort(list_to_sort):
             list_to_sort[i] = right[r]
             r += 1
             i += 1
-
+    return
 
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 x = range(len(my_list))
