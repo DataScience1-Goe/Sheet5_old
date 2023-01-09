@@ -3,11 +3,7 @@ def assignment(new_list, i, old_list, j):
 
 
 def merge_sort(list_to_sort_by_merge):
-    if (
-        len(list_to_sort_by_merge) > 1
-        and not len(list_to_sort_by_merge) < 1
-        and len(list_to_sort_by_merge) != 0
-    ):
+    if len(list_to_sort_by_merge) > 1:
         mid = len(list_to_sort_by_merge) // 2
         left = list_to_sort_by_merge[:mid]
         right = list_to_sort_by_merge[mid:]
