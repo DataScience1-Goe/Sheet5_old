@@ -2,11 +2,11 @@ def assignment(new_list, i, old_list, j):
     new_list[i] = old_list[j]
 
 
-def merge_sort(list_to_sort_by_merge):
-    if len(list_to_sort_by_merge) > 1:
-        mid = len(list_to_sort_by_merge) // 2
-        left = list_to_sort_by_merge[:mid]
-        right = list_to_sort_by_merge[mid:]
+def merge_sort(list_to_sort):
+    if len(list_to_sort) > 1:
+        mid = len(list_to_sort) // 2
+        left = list_to_sort[:mid]
+        right = list_to_sort[mid:]
 
         merge_sort(left)
         merge_sort(right)
@@ -17,20 +17,20 @@ def merge_sort(list_to_sort_by_merge):
 
         while l < len(left) and r < len(right):
             if left[l] <= right[r]:
-                assignment(new_list=list_to_sort_by_merge, i=i, old_list=left, j=l)
+                assignment(new_list=list_to_sort, i=i, old_list=left, j=l)
                 l += 1
             else:
-                assignment(new_list=list_to_sort_by_merge, i=i, old_list=right, j=r)
+                assignment(new_list=list_to_sort, i=i, old_list=right, j=r)
                 r += 1
             i += 1
 
         while l < len(left):
-            list_to_sort_by_merge[i] = left[l]
+            list_to_sort[i] = left[l]
             l += 1
             i += 1
 
         while r < len(right):
-            list_to_sort_by_merge[i] = right[r]
+            list_to_sort[i] = right[r]
             r += 1
             i += 1
 
