@@ -42,6 +42,7 @@ def merge_sort(list_to_sort):
             i += 1
     return
 
+
 # Plotte List ohne Sortieren
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 x = range(len(my_list))
