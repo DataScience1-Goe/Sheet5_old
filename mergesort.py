@@ -6,7 +6,6 @@ def assignment(new_list, i, old_list, j):
 
 def merge_sort(list_to_sort):
     if len(list_to_sort) > 1:
-        mid = len(list_to_sort) // 2
         left = list_to_sort[:mid]
         right = list_to_sort[mid:]
 
